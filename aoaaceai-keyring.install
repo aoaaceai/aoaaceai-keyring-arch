@@ -1,4 +1,5 @@
 post_upgrade() {
+    usr/bin/pacman-key --init
     usr/bin/pacman-key -l B462B692 || usr/bin/pacman-key --populate aoaaceai
 }
 
